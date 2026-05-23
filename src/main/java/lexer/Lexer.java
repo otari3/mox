@@ -11,8 +11,8 @@ import java.util.Queue;
 
 public class Lexer {
 
-    public List<Token> tokenize(String sourceCode){
-        ArrayList<Token> tokens = new ArrayList<>();
+    public Queue<Token> tokenize(String sourceCode){
+        Queue<Token> tokens = new LinkedList<>();
         Queue<Character> src = getQueueOfChars(sourceCode.toCharArray());
         while (!src.isEmpty()){
             switch (src.peek()){
@@ -54,6 +54,7 @@ public class Lexer {
 
             }
         }
+        tokens.add(new Token("EndOfFile",TokenType.EOF));
         return tokens;
     }
 

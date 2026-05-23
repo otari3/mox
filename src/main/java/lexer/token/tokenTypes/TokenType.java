@@ -8,5 +8,7 @@ public enum TokenType {
     OPENPARE,
     CLOSEPARE,
     BINERYOPERATOR,
+    EOF,
+    NULL,
 
 }

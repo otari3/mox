@@ -5,4 +5,5 @@ public enum NodeType {
     NUMERICLITERAL,
     IDENTIFIER,
     BINARYEXPR,
+    NULLLITERAL
 }

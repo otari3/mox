@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class KeyWords {
     public static final Map<String, TokenType> KEYWORDS = Map.of(
-            "let",TokenType.LET
+            "let",TokenType.LET,
+            "null",TokenType.NULL
     );
 }
