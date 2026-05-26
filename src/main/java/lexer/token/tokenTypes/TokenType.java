@@ -10,5 +10,4 @@ public enum TokenType {
     BINERYOPERATOR,
     EOF,
     NULL,
-
 }

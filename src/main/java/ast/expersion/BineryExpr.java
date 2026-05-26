@@ -2,7 +2,9 @@ package ast.expersion;
 
 
 import ast.NodeType;
+import lombok.Getter;
 
+@Getter
 public class BineryExpr implements Expr {
     Expr left;
     Expr right;
